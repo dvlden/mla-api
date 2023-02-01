@@ -1,7 +1,10 @@
-type Modulz<T extends string> = T extends `m${infer _}z` ? T : never
+import { profile } from './profile'
+import { baseUrl } from './utils/fetch'
 
-const isModulz = <T extends string>(input: T): input is Modulz<T> => {
-  return input.length > 2 && input.startsWith('m') && input.endsWith('z')
+export function createMultiloginApp({ port = 35000, version = 2 } = {}) {
+  baseUrl.value = `http://localhost.multiloginapp.com:${port}/api/v${version}`
+
+  return {
+    profile,
+  }
 }
-
-export { type Modulz, isModulz }
