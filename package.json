@@ -1,22 +1,22 @@
 {
-  "private": true,
-  "name": "modulz",
-  "version": "1.0.0",
-  "description": "Starting point of a new module for public or private use.",
-  "main": "dist/modulz.js",
-  "module": "dist/modulz.mjs",
-  "typings": "dist/modulz.d.ts",
+  "name": "@dvlden/mla-api",
+  "version": "0.0.1",
+  "description": "An API wrapper for Multilogin App.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist/"
   ],
   "keywords": [
-    "modulz",
-    "module",
-    "typescript",
-    "rollup",
-    "esbuild"
+    "multiloginapp",
+    "multilogin",
+    "mla",
+    "api",
+    "wrapper"
   ],
-  "repository": "github:dvlden/modulz",
+  "repository": "github:dvlden/mla-api",
   "author": "Nenad Novaković <n.dvlden@gmail.com> (https://dvl.sh/)",
   "funding": "https://github.com/sponsors/dvlden",
   "license": "MIT",
